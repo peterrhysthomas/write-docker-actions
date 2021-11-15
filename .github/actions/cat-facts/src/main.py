@@ -7,6 +7,8 @@ cat_url = "https://cat-fact.herokuapp.com/facts"
 r = requests.get(cat_url)
 r_obj_list = r.json()
 
+print("results: " + r_obj_list)
+
 # Create an empty list to store individual facts in
 # This will make it easy to select a random one later
 fact_list = []
